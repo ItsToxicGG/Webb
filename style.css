@@ -1,0 +1,99 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'VCR OSD Mono', monospace;
+}
+
+.topbar {
+    background-color: black;
+    padding: 10px 0;
+}
+
+.topbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topbar-title {
+    font-size: 24px;
+    color: red;
+}
+
+.topbar-link {
+    color: white;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.button {
+    position: relative;
+    margin: 0 10px;
+}
+
+.button-page {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.button-page img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.button-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.button-overlay:hover {
+    opacity: 1;
+}
+
+.button-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.login-button {
+    margin-top: 20px;
+}
+
+.footer {
+    background-color: black;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer-text {
+    font-size: 14px;
+    color: white;
+}
